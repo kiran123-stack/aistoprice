@@ -3,637 +3,537 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aistoprice — We Build Systems That Grow Your Business</title>
+  <title>aistoprice — We Build Websites That solve problem</title>
+  <link rel="icon" href="ICO.webp" type="image/webp" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#" class="nav__logo">ItzFizz<span>.</span></a>
-      <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Work</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact" class="nav__cta">Book a Call</a></li>
-      </ul>
-      <button class="nav__burger" id="burger" aria-label="Menu">
-        <span></span><span></span>
-      </button>
-    </div>
-    <div class="nav__mobile" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Work</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Book a Call</a>
-    </div>
-  </nav>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="ICO.webp" alt="logo" class="logo-icon" />
+      <span>KiranDev<em>.</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact" class="nav-cta">Book a Call</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Book a Call →</a>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero__bg">
-      <div class="hero__grid"></div>
-    </div>
-    <div class="hero__content fade-up">
-      <span class="hero__tag">Digital Agency — India</span>
-      <h1 class="hero__headline">
-        We Build Digital Systems<br />
-        <em>That Actually Grow</em><br />
-        Your Business.
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-container">
+    <div class="hero-left">
+      <div class="hero-badge fade-up">
+        <span class="badge-pulse"></span>
+        Available for new projects
+      </div>
+
+      <h1 class="hero-h1 fade-up delay-1">
+        We Build Websites<br />
+        That Convert<br />
+        <span class="h1-accent">Visitors Into Clients.</span>
       </h1>
-      <p class="hero__sub">
-        Web development, video editing, and data solutions — delivered fast,
-        built properly, and backed by people who actually respond.
+
+      <p class="hero-sub fade-up delay-2">
+        Not just good-looking pages — digital systems that generate real revenue. Fast code, thoughtful UX, and results you can actually measure.
       </p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary">Book a Free Call</a>
-        <a href="#portfolio" class="btn btn--ghost">See Our Work</a>
+
+      <div class="hero-btns fade-up delay-3">
+        <a href="#contact" class="btn btn-primary">
+          Book a Call
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#work" class="btn btn-ghost">View Work</a>
+      </div>
+
+      <div class="hero-stats fade-up delay-4">
+        <div class="hs">
+          <strong>40<span>+</span></strong>
+          <span>Projects Shipped</span>
+        </div>
+        <div class="hs-div"></div>
+        <div class="hs">
+          <strong>98<span>%</span></strong>
+          <span>Client Retention</span>
+        </div>
+        <div class="hs-div"></div>
+        <div class="hs">
+          <strong>3</strong>
+          <span>Countries</span>
+        </div>
       </div>
     </div>
 
-    <div class="hero__visual fade-up delay-2">
-      <div class="video-frame">
-        <div class="video-frame__inner">
-          <div class="video-placeholder">
-            <div class="video-screens">
-              <div class="screen screen--main">
-                <div class="screen__bar"></div>
-                <div class="screen__content">
-                  <div class="code-line" style="width:70%"></div>
-                  <div class="code-line" style="width:50%"></div>
-                  <div class="code-line" style="width:85%"></div>
-                  <div class="code-line" style="width:40%"></div>
-                  <div class="code-line accent" style="width:60%"></div>
-                  <div class="code-line" style="width:75%"></div>
-                </div>
+    <div class="hero-right fade-up delay-2">
+      <div class="browser-shell">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span class="bd r"></span>
+            <span class="bd y"></span>
+            <span class="bd g"></span>
+          </div>
+          <div class="browser-url">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2c-2.667 3.333-4 6.667-4 10s1.333 6.667 4 10M12 2c2.667 3.333 4 6.667 4 10s-1.333 6.667-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            kirandev.studio
+          </div>
+        </div>
+        <div class="browser-body">
+          <div class="video-area">
+            <div class="va-backdrop">
+              <div class="code-lines">
+                <div class="cl"><span class="ck">const</span> site = <span class="cf">buildPremium</span>({ client, goals });</div>
+                <div class="cl"><span class="ck">await</span> site.<span class="cf">deploy</span>();</div>
+                <div class="cl"><span class="cc">// Revenue increased 3x in 60 days</span></div>
+                <div class="cl"><span class="ck">return</span> { conversion: <span class="cn">0.94</span>, lcp: <span class="cn">1.2</span> };</div>
               </div>
-              <div class="screen screen--side">
-                <div class="screen__bar"></div>
-                <div class="screen__content">
-                  <div class="mini-chart">
-                    <div class="bar" style="height:40%"></div>
-                    <div class="bar" style="height:65%"></div>
-                    <div class="bar" style="height:50%"></div>
-                    <div class="bar" style="height:80%"></div>
-                    <div class="bar accent" style="height:95%"></div>
+            </div>
+            <div class="play-overlay" id="playBtn">
+              <div class="play-circle">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span>Watch Our Process</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browser-glow"></div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-bar"><div class="scroll-fill"></div></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Web Development</span><span class="mx">·</span>
+    <span>React & Next.js</span><span class="mx">·</span>
+    <span>Performance Optimization</span><span class="mx">·</span>
+    <span>AI Integration</span><span class="mx">·</span>
+    <span>UI/UX Design</span><span class="mx">·</span>
+    <span>E-Commerce</span><span class="mx">·</span>
+    <span>Web Development</span><span class="mx">·</span>
+    <span>React & Next.js</span><span class="mx">·</span>
+    <span>Performance Optimization</span><span class="mx">·</span>
+    <span>AI Integration</span><span class="mx">·</span>
+    <span>UI/UX Design</span><span class="mx">·</span>
+    <span>E-Commerce</span><span class="mx">·</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="about-wrap">
+
+      <div class="about-photo-col fade-up">
+        <div class="photo-card">
+          <div class="photo-img-wrap">
+            <img src="person.jfif" alt="Kiran — Lead Developer" />
+          </div>
+          <div class="photo-status">
+            <span class="ps-dot"></span>
+            Available for projects
+          </div>
+        </div>
+        <div class="about-meta">
+          <div class="am-row">
+            <span class="mono-sm">Role</span>
+            <span>Lead Developer & Founder</span>
+          </div>
+          <div class="am-row">
+            <span class="mono-sm">Based</span>
+            <span>India — Global Clients</span>
+          </div>
+          <div class="am-row">
+            <span class="mono-sm">Stack</span>
+            <span>React · Next.js · Node</span>
+          </div>
+          <div class="am-row">
+            <span class="mono-sm">Response</span>
+            <span class="am-accent">Within 4 hours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col fade-up delay-1">
+        <span class="label">About</span>
+        <h2 class="section-title">A developer who<br />doesn't disappear.</h2>
+        <p>I started this studio after watching too many clients get burned. Agencies that overpromised, delivered late, and built sites that looked polished in the demo but fell apart in production.</p>
+        <p>So I built something different. Small team. Direct communication. Every decision tied back to what actually moves your business forward — not what looks impressive in a portfolio screenshot.</p>
+        <p>When you work with us, you're talking to the person building your site. Not a project manager playing telephone.</p>
+
+        <div class="pillars">
+          <div class="pillar fade-up delay-2">
+            <div class="pi">⚡</div>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>Most projects ship in 2–3 weeks. No endless revision loops.</p>
+            </div>
+          </div>
+          <div class="pillar fade-up delay-3">
+            <div class="pi">🎯</div>
+            <div>
+              <strong>Results First</strong>
+              <p>Every design decision tied back to your conversion goals.</p>
+            </div>
+          </div>
+          <div class="pillar fade-up delay-4">
+            <div class="pi">💬</div>
+            <div>
+              <strong>Real Communication</strong>
+              <p>Updates at every step. You're never left wondering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WORK — BENTO -->
+<section class="work section" id="work">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label">Selected Work</span>
+      <h2 class="section-title">Projects we can<br />actually break down.</h2>
+      <p class="section-sub">Real problems. Real solutions. Numbers that prove it worked.</p>
+    </div>
+
+    <div class="bento">
+
+      <!-- FEATURED: MindPulse -->
+      <div class="bento-card bento-featured fade-up">
+        <div class="bento-left">
+          <!-- Laptop Frame -->
+          <div class="laptop">
+            <div class="laptop-lid">
+              <div class="laptop-screen-bezel">
+                <div class="laptop-screen">
+                  <img src="ICO.webp" alt="MindPulse" class="screen-img" />
+                  <div class="screen-hover">
+                    <a href="https://mind-pluse.vercel.app/" target="_blank" class="sh-btn">Live Site ↗</a>
+                    <a href="https://github.com/kiran123-stack/MindPluse" target="_blank" class="sh-btn ghost">GitHub →</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="video-play">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <div class="laptop-hinge"></div>
+            <div class="laptop-base-wrap">
+              <div class="laptop-base">
+                <div class="laptop-trackpad"></div>
               </div>
-              <span>Watch our setup</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-right">
+          <div class="proj-meta">
+            <span class="proj-cat">Behavioral AI</span>
+            <span class="proj-badge enc">🔒 AES-256</span>
+          </div>
+          <h3 class="proj-title">MindPulse</h3>
+
+          <div class="case-study">
+            <div class="cs-block challenge">
+              <span class="cs-tag">Challenge</span>
+              <p>High-latency detection in real-time typing dynamics — needed sub-20ms response with zero false positives in stress classification across varying keyboards and user patterns.</p>
+            </div>
+            <div class="cs-block solution">
+              <span class="cs-tag">Solution</span>
+              <p>Built a keystroke analysis pipeline using Grok AI with edge processing. Moved heavy computation to worker threads, reducing latency from 340ms to under 18ms without sacrificing accuracy.</p>
+            </div>
+            <div class="cs-block outcome">
+              <span class="cs-tag">Outcome</span>
+              <p><strong>94% accuracy</strong> in stress recognition. Deployed for enterprise wellness teams across 3 companies. Zero data breach incidents with AES-256 encryption.</p>
+            </div>
+          </div>
+
+          <div class="proj-tech">
+            <span>Next.js</span><span>Grok AI</span><span>GSAP</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://mind-pluse.vercel.app/" target="_blank" class="pl-link">Live Site ↗</a>
+            <a href="https://github.com/kiran123-stack/MindPluse" target="_blank" class="pl-link ghost">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 2: Natours + Cinesphere -->
+      <div class="bento-row2">
+
+        <div class="bento-card bento-sm fade-up delay-1">
+          <div class="sm-img">
+            <img src="air.webp" alt="Natours AI" />
+            <div class="sm-overlay">
+              <span class="proj-cat">Autonomous Travel</span>
+              <h4>Natours AI</h4>
+              <p><strong>Challenge:</strong> Multi-agent orchestration across 40+ real-time travel APIs simultaneously — latency spikes caused cascading failures.</p>
+              <p><strong>Solution:</strong> Queue-based agent architecture with fallback chains. Each agent handles a domain independently.</p>
+              <p><strong>Outcome:</strong> 80% reduction in planning time. Average itinerary generated in 15 seconds flat.</p>
+              <div class="sm-links">
+                <a href="https://natours-ai.vercel.app/" target="_blank">Live ↗</a>
+                <a href="https://github.com/kiran123-stack/natours-ai" target="_blank">GitHub →</a>
+              </div>
+            </div>
+          </div>
+          <div class="sm-footer">
+            <div>
+              <span class="proj-cat tiny">Autonomous Travel</span>
+              <h4 class="sm-title">Natours AI</h4>
+            </div>
+            <span class="sm-stat">⚡ 15s Gen</span>
+          </div>
+          <div class="proj-tech tiny">
+            <span>Gemini AI</span><span>Node.js</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-sm fade-up delay-2">
+          <div class="sm-img">
+            <img src="movie.jpg" alt="Cinesphere" />
+            <div class="sm-overlay">
+              <span class="proj-cat">Streaming UI</span>
+              <h4>Cinesphere</h4>
+              <p><strong>Challenge:</strong> LCP was 4.2s on image-heavy movie grids. Client was losing 35% of users before the page even finished loading.</p>
+              <p><strong>Solution:</strong> Aggressive lazy loading, WebP conversion pipeline, CSS content-visibility, and CDN edge caching for all image assets.</p>
+              <p><strong>Outcome:</strong> LCP dropped to 1.2s. Lighthouse hit 98/100. Bounce rate fell from 61% to 22%.</p>
+              <div class="sm-links">
+                <a href="https://cine-sphere-one.vercel.app/" target="_blank">Live ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="sm-footer">
+            <div>
+              <span class="proj-cat tiny">Streaming UI</span>
+              <h4 class="sm-title">Cinesphere</h4>
+            </div>
+            <span class="sm-stat green"> LCP &lt;1.2s</span>
+          </div>
+          <div class="proj-tech tiny">
+            <span>React</span><span>CSS3</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 3: Oggy — FULL WIDTH -->
+      <div class="bento-card bento-wide fade-up delay-1">
+        <div class="wide-img">
+          <img src="oggy.webp" alt="Oggy Visuals" />
+          <div class="wide-overlay">
+            <div class="wide-left">
+              <span class="proj-cat">Creative Frontend</span>
+              <h4>Oggy Visuals</h4>
+              <div class="wide-cs">
+                <div class="wcs">
+                  <span class="cs-tag">Challenge</span>
+                  <p>Client needed 60 FPS micro-interactions on mid-range Android devices. React's virtual DOM diffing was causing dropped frames on scroll-triggered animations.</p>
+                </div>
+                <div class="wcs">
+                  <span class="cs-tag">Solution</span>
+                  <p>Removed React entirely for animation layer. Pure GSAP with CSS compositing — moved everything to compositor thread via will-change and transform-only properties.</p>
+                </div>
+                <div class="wcs">
+                  <span class="cs-tag">Outcome</span>
+                  <p>Consistent 60 FPS across all target devices. Zero main-thread blocking during scroll. Client's bounce rate dropped 40% in the first month.</p>
+                </div>
+              </div>
+              <div class="sm-links">
+                <a href="https://oggy-nu.vercel.app/" target="_blank">Live ↗</a>
+              </div>
+            </div>
+            <div class="wide-right">
+              <div class="perf-grid">
+                <div class="perf-box">
+                  <span class="pb-num">60</span>
+                  <span class="pb-unit">FPS</span>
+                  <span class="pb-label">Consistent</span>
+                </div>
+                <div class="perf-box">
+                  <span class="pb-num">0ms</span>
+                  <span class="pb-unit"></span>
+                  <span class="pb-label">Thread Block</span>
+                </div>
+                <div class="perf-box">
+                  <span class="pb-num">40%</span>
+                  <span class="pb-unit"></span>
+                  <span class="pb-label">Bounce Drop</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-footer">
+          <div>
+            <span class="proj-cat tiny">Creative Frontend</span>
+            <h4 class="sm-title">Oggy Visuals</h4>
+          </div>
+          <div class="wide-footer-right">
+            <span class="sm-stat purple">🎬 60 FPS Motion</span>
+            <div class="proj-tech tiny">
+              <span>GSAP</span><span>Vanilla JS</span><span>HTML5</span>
             </div>
           </div>
         </div>
       </div>
+
+    </div><!-- /bento -->
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process section" id="process">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label">How We Work</span>
+      <h2 class="section-title">Four steps.<br />Zero surprises.</h2>
     </div>
 
-    <div class="hero__scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    <div class="proc-grid">
+      <div class="proc-step fade-up delay-1">
+        <div class="ps-num mono-sm">01</div>
+        <div class="ps-ico">🔍</div>
+        <h4>Discovery</h4>
+        <p>30-minute call to understand your goals, users, and what's actually blocking growth. We ask the questions most developers skip.</p>
+        <div class="ps-out">
+          <span class="mono-sm">Output →</span> Project brief + scope
+        </div>
+      </div>
+      <div class="proc-arrow fade-up delay-1">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
 
-  <!-- MARQUEE -->
-  <div class="marquee">
-    <div class="marquee__track">
-      <span>Web Development</span>
-      <span class="dot">·</span>
-      <span>Video Editing</span>
-      <span class="dot">·</span>
-      <span>Excel & Data</span>
-      <span class="dot">·</span>
-      <span>UI Design</span>
-      <span class="dot">·</span>
-      <span>E-Commerce</span>
-      <span class="dot">·</span>
-      <span>Digital Strategy</span>
-      <span class="dot">·</span>
-      <span>Web Development</span>
-      <span class="dot">·</span>
-      <span>Video Editing</span>
-      <span class="dot">·</span>
-      <span>Excel & Data</span>
-      <span class="dot">·</span>
-      <span>UI Design</span>
-      <span class="dot">·</span>
-      <span>E-Commerce</span>
-      <span class="dot">·</span>
-      <span>Digital Strategy</span>
-      <span class="dot">·</span>
+      <div class="proc-step fade-up delay-2">
+        <div class="ps-num mono-sm">02</div>
+        <div class="ps-ico">📐</div>
+        <h4>Planning</h4>
+        <p>Full architecture mapped out. Timeline agreed. Every detail locked before a single line of code is written.</p>
+        <div class="ps-out">
+          <span class="mono-sm">Output →</span> Wireframes + timeline
+        </div>
+      </div>
+      <div class="proc-arrow fade-up delay-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="proc-step fade-up delay-3">
+        <div class="ps-num mono-sm">03</div>
+        <div class="ps-ico">⚙️</div>
+        <h4>Development</h4>
+        <p>Clean code, mobile-first, performance-obsessed. You get milestone updates — not radio silence for two weeks then a rushed handover.</p>
+        <div class="ps-out">
+          <span class="mono-sm">Output →</span> Staged builds + reviews
+        </div>
+      </div>
+      <div class="proc-arrow fade-up delay-3">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="proc-step fade-up delay-4">
+        <div class="ps-num mono-sm">04</div>
+        <div class="ps-ico">🚀</div>
+        <h4>Delivery</h4>
+        <p>Full handover with walkthrough and docs. 14 days post-launch support included. We don't disappear after deploy.</p>
+        <div class="ps-out">
+          <span class="mono-sm">Output →</span> Live site + handover docs
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="about__grid">
-        <div class="about__left fade-up">
-          <span class="label">About Us</span>
-          <h2 class="section-title">A small team.<br />Serious about delivery.</h2>
-          <p>We're a three-person team working out of India — building websites, editing video, and sorting out data problems for clients in the US, UK, and Canada.</p>
-          <p>Our setup is three screens, fast internet, and a shared commitment to not ghosting clients. We don't promise the world. We promise to show up, communicate clearly, and finish what we started.</p>
-          <p>Most of our clients come back for more work. That's the measure we care about.</p>
-          <div class="about__stats">
-            <div class="stat">
-              <span class="stat__num">40+</span>
-              <span class="stat__label">Projects Delivered</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num">3</span>
-              <span class="stat__label">Countries Served</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num">98%</span>
-              <span class="stat__label">On-Time Delivery</span>
-            </div>
-          </div>
-        </div>
-        <div class="about__right fade-up delay-1">
-          <div class="about__workspace">
-            <div class="workspace-card ws-main">
-              <div class="ws-icon">⚡</div>
-              <div>
-                <strong>Fast Turnaround</strong>
-                <p>Most projects delivered within agreed timelines. No excuses.</p>
-              </div>
-            </div>
-            <div class="workspace-card ws-comm">
-              <div class="ws-icon">💬</div>
-              <div>
-                <strong>Clear Communication</strong>
-                <p>We respond within hours, not days. Updates every step of the way.</p>
-              </div>
-            </div>
-            <div class="workspace-card ws-qual">
-              <div class="ws-icon">🎯</div>
-              <div>
-                <strong>Quality That Shows</strong>
-                <p>We don't cut corners. Everything we ship we're proud to put our name on.</p>
-              </div>
-            </div>
-            <div class="workspace-setup">
-              <div class="setup-dot"></div>
-              <div class="setup-dot"></div>
-              <div class="setup-dot"></div>
-              <span>3 screens · 1 team · Always online</span>
-            </div>
-          </div>
-        </div>
+<!-- FINAL CTA -->
+<section class="cta-sec section" id="contact">
+  <div class="container">
+    <div class="cta-wrap fade-up">
+      <div class="cta-orb"></div>
+      <span class="label">Ready to Start?</span>
+      <h2 class="cta-h2">Let's build something<br /><em>that actually works.</em></h2>
+      <p class="cta-p">Tell us what you need. We'll respond within a few hours — no sales pitch, no fluff.</p>
+      <div class="cta-btns">
+        <a href="mailto:hello@kirandev.studio" class="btn btn-primary btn-lg">Start a Project</a>
+        <a href="https://wa.me/919999999999" target="_blank" class="btn btn-ghost btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="cta-contacts">
+        <a href="mailto:hello@kirandev.studio">hello@kirandev.studio</a>
+        <span>·</span>
+        <a href="https://wa.me/919999999999">+91 99999 99999</a>
+        <span>·</span>
+        <span style="color:var(--text-muted)">Reply within 4 hrs</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="label">What We Do</span>
-        <h2 class="section-title">Three things.<br />Done properly.</h2>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <img src="ICO.webp" alt="logo" class="logo-icon" />
+          <span>KiranDev<em>.</em></span>
+        </a>
+        <p>Building digital systems that grow real businesses. India-based, globally delivered.</p>
       </div>
-      <div class="services__grid">
-
-        <div class="service-card fade-up delay-1">
-          <div class="service-card__num">01</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="4" y="8" width="32" height="22" rx="2"/>
-              <path d="M14 30v4M26 30v4M10 34h20"/>
-              <path d="M10 16l4 4-4 4M18 20h12" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Web Development</h3>
-          <p>Clean, fast websites and web apps built to actually convert. We focus on load speed, mobile experience, and the small things clients notice when they're deciding whether to trust you.</p>
-          <ul class="service-card__list">
-            <li>Custom websites & landing pages</li>
-            <li>E-commerce (Shopify, WooCommerce)</li>
-            <li>Web app development</li>
-            <li>Performance & SEO optimization</li>
-          </ul>
-          <a href="#contact" class="service-card__link">Start a project →</a>
-        </div>
-
-        <div class="service-card fade-up delay-2">
-          <div class="service-card__num">02</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="4" y="6" width="32" height="24" rx="2"/>
-              <circle cx="20" cy="18" r="5"/>
-              <path d="M17.5 18l5-3v6l-5-3z" fill="currentColor" stroke="none"/>
-              <path d="M4 28h32M8 32h24" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Video Editing</h3>
-          <p>From YouTube content to social clips and client presentations — we edit video that holds attention. No stock-template feel. Real editing with proper cuts, color, and pacing.</p>
-          <ul class="service-card__list">
-            <li>YouTube & social media content</li>
-            <li>Corporate & promotional video</li>
-            <li>Color grading & sound design</li>
-            <li>Reels, Shorts & TikTok cuts</li>
-          </ul>
-          <a href="#contact" class="service-card__link">Start a project →</a>
-        </div>
-
-        <div class="service-card fade-up delay-3">
-          <div class="service-card__num">03</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="4" y="6" width="32" height="28" rx="2"/>
-              <path d="M4 14h32M12 14v20M20 14v20"/>
-              <path d="M16 20h8M16 26h8" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Excel & Data Solutions</h3>
-          <p>Dashboards, automation, data cleanup, reports — if you're spending hours in spreadsheets doing things manually, we probably have a better way. Built to actually fit how you work.</p>
-          <ul class="service-card__list">
-            <li>Custom Excel dashboards</li>
-            <li>Data cleaning & automation</li>
-            <li>Pivot tables & reporting</li>
-            <li>VBA macros & formula builds</li>
-          </ul>
-          <a href="#contact" class="service-card__link">Start a project →</a>
-        </div>
-
+      <div class="footer-col">
+        <h6>Navigate</h6>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h6>Projects</h6>
+        <a href="https://mind-pluse.vercel.app/" target="_blank">MindPulse</a>
+        <a href="https://natours-ai.vercel.app/" target="_blank">Natours AI</a>
+        <a href="https://cine-sphere-one.vercel.app/" target="_blank">Cinesphere</a>
+        <a href="https://oggy-nu.vercel.app/" target="_blank">Oggy Visuals</a>
+      </div>
+      <div class="footer-col">
+        <h6>Contact</h6>
+        <a href="mailto:hello@kirandev.studio">hello@kirandev.studio</a>
+        <a href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+        <span style="color:var(--text-muted);font-size:13px;">📍 India → US · UK · Canada</span>
       </div>
     </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section class="portfolio section" id="portfolio">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="label">Our Work</span>
-        <h2 class="section-title">Projects we're<br />proud to talk about.</h2>
-      </div>
-      <div class="portfolio__grid">
-
-        <div class="project-card fade-up delay-1">
-          <div class="project-card__img" style="background: #0f0f0f;">
-            <div class="project-mockup pm--web">
-              <div class="pm__bar"><span></span><span></span><span></span></div>
-              <div class="pm__body">
-                <div class="pm__hero-block"></div>
-                <div class="pm__row"><div class="pm__col"></div><div class="pm__col"></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-tag">Web Development</span>
-            <h4>Local Services Business — US Client</h4>
-            <p class="project-problem"><strong>Problem:</strong> No online presence. Losing leads to competitors with basic websites.</p>
-            <p class="project-result"><strong>Result:</strong> Website live in 12 days. Client reported 3x more enquiries in first month.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-up delay-2">
-          <div class="project-card__img" style="background: #080c10;">
-            <div class="project-mockup pm--video">
-              <div class="pm__timeline">
-                <div class="pm__track t1"></div>
-                <div class="pm__track t2"></div>
-                <div class="pm__scrubber"></div>
-              </div>
-              <div class="pm__preview"></div>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-tag">Video Editing</span>
-            <h4>YouTube Channel — UK Content Creator</h4>
-            <p class="project-problem"><strong>Problem:</strong> Raw footage sitting unwatched. No time to edit consistently.</p>
-            <p class="project-result"><strong>Result:</strong> 8 videos edited in 2 weeks. Channel grew 4,200 subscribers in 60 days.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-up delay-3">
-          <div class="project-card__img" style="background: #090910;">
-            <div class="project-mockup pm--excel">
-              <div class="pm__spreadsheet">
-                <div class="pm__cell header"></div>
-                <div class="pm__cell header"></div>
-                <div class="pm__cell header"></div>
-                <div class="pm__cell"></div>
-                <div class="pm__cell accent"></div>
-                <div class="pm__cell"></div>
-                <div class="pm__cell"></div>
-                <div class="pm__cell"></div>
-                <div class="pm__cell accent"></div>
-              </div>
-              <div class="pm__chart-mini"></div>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-tag">Excel & Data</span>
-            <h4>Sales Dashboard — Canadian Retail Brand</h4>
-            <p class="project-problem"><strong>Problem:</strong> Team spending 6+ hours/week manually compiling sales reports.</p>
-            <p class="project-result"><strong>Result:</strong> Automated dashboard. Report time reduced to under 20 minutes.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-up delay-1">
-          <div class="project-card__img" style="background: #0a0a0f;">
-            <div class="project-mockup pm--ecom">
-              <div class="pm__product-grid">
-                <div class="pm__product"></div>
-                <div class="pm__product"></div>
-                <div class="pm__product"></div>
-                <div class="pm__product"></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-tag">Web Development</span>
-            <h4>Shopify Store — US Fashion Brand</h4>
-            <p class="project-problem"><strong>Problem:</strong> Existing store was slow and had a 78% cart abandonment rate.</p>
-            <p class="project-result"><strong>Result:</strong> Rebuilt on optimized Shopify. Load time dropped 60%. Conversions up.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-up delay-2">
-          <div class="project-card__img" style="background: #080c0a;">
-            <div class="project-mockup pm--social">
-              <div class="pm__reel"></div>
-              <div class="pm__reel r2"></div>
-              <div class="pm__reel r3"></div>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-tag">Video Editing</span>
-            <h4>Instagram Reels — Fitness Coach, UK</h4>
-            <p class="project-problem"><strong>Problem:</strong> Posting inconsistently. Engagement low. Content felt flat.</p>
-            <p class="project-result"><strong>Result:</strong> 12 reels per month. Average views per reel went from 800 to 11,000.</p>
-          </div>
-        </div>
-
-        <div class="project-card fade-up delay-3">
-          <div class="project-card__img" style="background: #0c0a08;">
-            <div class="project-mockup pm--landing">
-              <div class="pm__lp-hero"></div>
-              <div class="pm__lp-features">
-                <span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-          <div class="project-card__info">
-            <span class="project-tag">Web Development</span>
-            <h4>SaaS Landing Page — US Tech Startup</h4>
-            <p class="project-problem"><strong>Problem:</strong> No dedicated landing page. Paid ads sending traffic to homepage.</p>
-            <p class="project-result"><strong>Result:</strong> Conversion rate on ad traffic improved from 1.2% to 4.8%.</p>
-          </div>
-        </div>
-
-      </div>
+    <div class="footer-bottom">
+      <span>© 2025 KiranDev Studio. All rights reserved.</span>
+      <span class="mono-sm">Built by us. For you.</span>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- FEEDBACK -->
-  <section class="feedback section" id="feedback">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="label">Client Feedback</span>
-        <h2 class="section-title">What clients<br />actually said.</h2>
-      </div>
-      <div class="feedback__grid">
-
-        <div class="review-card fade-up delay-1">
-          <div class="review-stars">★★★★★</div>
-          <p>"Good communication throughout. They asked the right questions before starting and delivered exactly what I needed. Will use again."</p>
-          <div class="review-author">
-            <div class="review-avatar" style="background:#1a1a2e;">JM</div>
-            <div>
-              <strong>James M.</strong>
-              <span>Business Owner, United States</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card fade-up delay-2">
-          <div class="review-stars">★★★★★</div>
-          <p>"Honestly didn't expect this quality from a freelance team. The video editing was clean and professional. Understood my brand without me having to over-explain."</p>
-          <div class="review-author">
-            <div class="review-avatar" style="background:#1a2e1a;">SR</div>
-            <div>
-              <strong>Sophie R.</strong>
-              <span>Content Creator, United Kingdom</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card fade-up delay-3">
-          <div class="review-stars">★★★★★</div>
-          <p>"Fast delivery and responsive. The Excel dashboard they built saved my team hours every week. Simple to use and actually works the way we wanted."</p>
-          <div class="review-author">
-            <div class="review-avatar" style="background:#2e1a1a;">TC</div>
-            <div>
-              <strong>Tom C.</strong>
-              <span>Operations Manager, Canada</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card fade-up delay-1">
-          <div class="review-stars">★★★★☆</div>
-          <p>"Good work. Took one round of revisions to get the website exactly right but they were patient and made the changes quickly. Happy with the result."</p>
-          <div class="review-author">
-            <div class="review-avatar" style="background:#1a2a2e;">AK</div>
-            <div>
-              <strong>Aisha K.</strong>
-              <span>Founder, E-Commerce Brand, UK</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="process section" id="process">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="label">How We Work</span>
-        <h2 class="section-title">No surprises.<br />Just a clear process.</h2>
-      </div>
-      <div class="process__steps">
-
-        <div class="process-step fade-up delay-1">
-          <div class="process-step__num">01</div>
-          <div class="process-step__content">
-            <h4>Discovery</h4>
-            <p>We start with a call or a brief. We want to understand what you actually need — not just what you asked for. This usually takes 30 minutes and saves everyone time.</p>
-          </div>
-        </div>
-
-        <div class="process-step fade-up delay-2">
-          <div class="process-step__num">02</div>
-          <div class="process-step__content">
-            <h4>Planning</h4>
-            <p>We scope the work, agree on timeline, and share a simple breakdown. No legal jargon. Just a clear agreement on what gets done and by when.</p>
-          </div>
-        </div>
-
-        <div class="process-step fade-up delay-3">
-          <div class="process-step__num">03</div>
-          <div class="process-step__content">
-            <h4>Execution</h4>
-            <p>We build. You get updates at key milestones — not radio silence for two weeks then a rushed handover. If something changes, we tell you.</p>
-          </div>
-        </div>
-
-        <div class="process-step fade-up delay-4">
-          <div class="process-step__num">04</div>
-          <div class="process-step__content">
-            <h4>Delivery</h4>
-            <p>Clean handover. We walk you through what was built, answer your questions, and make sure you can actually use it. Support doesn't stop at delivery.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TEAM -->
-  <section class="team section" id="team">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="label">The Team</span>
-        <h2 class="section-title">Three people.<br />One standard.</h2>
-        <p class="section-sub">We're a tight team. Everyone knows what everyone else is doing. That's why things don't fall through the cracks.</p>
-      </div>
-      <div class="team__grid">
-
-        <div class="team-card fade-up delay-1">
-          <div class="team-card__avatar avatar--kiran">
-            <div class="avatar-inner">
-              <div class="avatar-head"></div>
-              <div class="avatar-body"></div>
-              <div class="avatar-detail k1"></div>
-              <div class="avatar-detail k2"></div>
-            </div>
-            <div class="avatar-ring"></div>
-          </div>
-          <div class="team-card__info">
-            <h4>Kiran</h4>
-            <span class="team-role">Web Developer & Lead</span>
-            <p>Handles frontend development, project management, and client communication. The one you'll talk to most.</p>
-            <div class="team-tags">
-              <span>React</span><span>HTML/CSS</span><span>Shopify</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-card fade-up delay-2">
-          <div class="team-card__avatar avatar--prince">
-            <div class="avatar-inner">
-              <div class="avatar-head"></div>
-              <div class="avatar-body"></div>
-              <div class="avatar-detail p1"></div>
-              <div class="avatar-detail p2"></div>
-            </div>
-            <div class="avatar-ring"></div>
-          </div>
-          <div class="team-card__info">
-            <h4>Prince</h4>
-            <span class="team-role">Video Editor</span>
-            <p>Edits everything from YouTube long-form to 30-second reels. Understands pacing, color, and what keeps people watching.</p>
-            <div class="team-tags">
-              <span>Premiere Pro</span><span>After Effects</span><span>DaVinci</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-card fade-up delay-3">
-          <div class="team-card__avatar avatar--pardeep">
-            <div class="avatar-inner">
-              <div class="avatar-head"></div>
-              <div class="avatar-body"></div>
-              <div class="avatar-detail d1"></div>
-              <div class="avatar-detail d2"></div>
-            </div>
-            <div class="avatar-ring"></div>
-          </div>
-          <div class="team-card__info">
-            <h4>Pardeep</h4>
-            <span class="team-role">Data & Excel Specialist</span>
-            <p>Builds dashboards, automates reports, and cleans data. If it lives in a spreadsheet, he's already thought of a better way to handle it.</p>
-            <div class="team-tags">
-              <span>Excel</span><span>VBA</span><span>Power BI</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="cta-final section" id="contact">
-    <div class="container">
-      <div class="cta-final__inner fade-up">
-        <span class="label">Ready to Start?</span>
-        <h2>Let's build something<br /><em>that actually works.</em></h2>
-        <p>Tell us what you need. We'll get back to you within a few hours — not a few days.</p>
-        <div class="cta-final__actions">
-          <a href="mailto:hello@itzfizz.com" class="btn btn--primary btn--lg">Get Started</a>
-          <a href="https://wa.me/919999999999" class="btn btn--ghost btn--lg" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp Us
-          </a>
-        </div>
-        <div class="cta-final__contact-info">
-          <a href="mailto:hello@itzfizz.com">hello@itzfizz.com</a>
-          <span>·</span>
-          <a href="https://wa.me/919999999999" target="_blank">+91 99999 99999</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="#" class="nav__logo">ItzFizz<span>.</span></a>
-          <p>A small digital agency building websites, editing video, and solving data problems for businesses worldwide.</p>
-        </div>
-        <div class="footer__nav">
-          <h5>Navigation</h5>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Work</a>
-          <a href="#team">Team</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer__services">
-          <h5>Services</h5>
-          <span>Web Development</span>
-          <span>Video Editing</span>
-          <span>Excel & Data</span>
-          <span>E-Commerce</span>
-        </div>
-        <div class="footer__contact">
-          <h5>Get In Touch</h5>
-          <a href="mailto:hello@itzfizz.com">hello@itzfizz.com</a>
-          <a href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
-          <div class="footer__location">📍 India — Serving US, UK, Canada</div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>© 2025 ItzFizz Digital. All rights reserved.</span>
-        <span>Built by us. For you.</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
